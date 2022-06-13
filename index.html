@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        *{
+            font-family:  'Poppins', sans-serif; 
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            background-image: url(back.png);
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 20%;
+            //max-width:400px;
+            border: 1px solid  rgba(255,255, 255, 0.3);
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            border-radius: 25px;
+            background: rgba(255,255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+            backdrop-filter: blur(5px);
+
+        }
+        .card img{
+            width: 90px;
+            height: 110px;
+            border-radius: 50%;
+     
+        
+        }
+        .card h2{
+            color: black;
+            font-size: 25px;
+            font-weight: 900;
+            padding: 10px;
+        }
+        .card p{
+            font-style: 15px;
+            color:#fff;
+            text-align: center;
+            margin: 10px;
+        }
+        .card a{
+            text-decoration: none;
+        }
+        .card .links img{
+            width: 30px;
+            height: 30px;
+            margin: 10px 5px;
+            border-radius: 50px;
+            transition: background 0.5s;
+        }
+        .links img:hover{
+            background: pink;
+        }
+        @media screen  and (max-width:480px){
+            .card{
+                width:50%;
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" data-tilt>
+            <img src="tarun img.jpeg">
+            <h2>Tharun Kumar</h2>
+            <p>Welcome To My Profile.. :)</p>
+            <p>Connect With Me</p>
+                <div class="links">
+                 <a href="https://www.facebook.com/profile.php?id=100007710788188" target="_blank">
+                     <img src="facebook.png">
+                 </a>
+                 <a href="https://twitter.com/busyybugg" target="_blank">
+                    <img src="twitter.png">
+                </a>
+                <a href="https://www.linkedin.com/in/tharun-kumar-302089241/" target="_blank">
+                    <img src="linkedin-logo-png-1826.png">
+                </a>
+                <a href="https://www.instagram.com/busybug__/"><img src="instagram-logo-icon-png.png" alt=""></a>
+                </div>
+                
+        </div>
+    </div>
+    <script src="vanilla-tilt.js"></script>
+</body>
+</html>
